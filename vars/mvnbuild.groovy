@@ -32,7 +32,7 @@ node {
    //Running build with skipping tests and deploying artifacts
    else {
     stage ('Install') {
-        rtMaven.run pom: 'pom.xml', goals: 'install -DskipTests=true', buildInfo: buildInfo
+        //rtMaven.run pom: 'pom.xml', goals: 'install -DskipTests=true', buildInfo: buildInfo
         sh "mvn clean install -DskipTests=true"
        } 
      }
