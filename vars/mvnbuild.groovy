@@ -7,10 +7,7 @@ node {
       // Get some code from a GitHub repository
       cleanWs()
    
-       checkout scm
-
-      // Get the Maven tool.
-      // ** NOTE: This 'M2' Maven tool must be configured         
+       checkout scm        
    }
 
 
